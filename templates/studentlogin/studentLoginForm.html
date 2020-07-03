@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+{% block content %}
+<form action="{% url 'afterStudentLogin' %}" method="POST">
+    {% csrf_token %}
+    {{lForm}}
+    <input type="submit" value="">
+</form>
+{{error}}
+{% endblock %}

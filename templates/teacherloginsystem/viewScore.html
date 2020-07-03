@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% block content %}
+{%for x in user%}
+    <DIV>
+        <div>Reg Number:
+            {{x.regNumber}}
+        </div>
+        <div>
+            Score:
+            {{x.score}}
+        </div>
+    </DIV>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+{% block content %}
+<form action="{% url 'afterAdd' %}" method="POST">
+    {%csrf_token%}
+    Question1: <input type="text" name="question1">
+    Options: <textarea name="options1" id="" cols="30" rows="10"></textarea>
+    Answer1: <input type="text" name="answer1" id="">
+    Question2: <input type="text" name="question2">
+    Options2: <textarea name="options2" id="" cols="30" rows="10"></textarea>
+    Answer2: <input type="text" name="answer2" id="">
+    Question3: <input type="text" name="question3">
+    Options3: <textarea name="options3" id="" cols="30" rows="10"></textarea>
+    Answer3: <input type="text" name="answer3" id="">
+    Question4: <input type="text" name="question4">
+    Options4: <textarea name="options4" id="" cols="30" rows="10"></textarea>
+    Answer4: <input type="text" name="answer4" id="">
+    Question5: <input type="text" name="question5">
+    Options5: <textarea name="options5" id="" cols="30" rows="10"></textarea>
+    Answer5: <input type="text" name="answer5" id="">
+    Question6: <input type="text" name="question6">
+    Options6: <textarea name="options6" id="" cols="30" rows="10"></textarea>
+    Answer6: <input type="text" name="answer6" id="">
+    Question7: <input type="text" name="question7">
+    Options7: <textarea name="options7" id="" cols="30" rows="10"></textarea>
+    Answer7: <input type="text" name="answer7" id="">
+    Question8: <input type="text" name="question8">
+    Options8: <textarea name="options8" id="" cols="30" rows="10"></textarea>
+    Answer8: <input type="text" name="answer8" id="">
+    Question9: <input type="text" name="question9">
+    Options9: <textarea name="options9" id="" cols="30" rows="10"></textarea>
+    Answer9: <input type="text" name="answer9" id="">
+    Question10: <input type="text" name="question10">
+    Options10: <textarea name="options10" id="" cols="30" rows="10"></textarea>
+    Answer10: <input type="text" name="answer10" id="">
+    Students: <textarea name="student" id="" cols="30" rows="10"></textarea>
+    Password For Quiz: <input type="text" name="password_for_quiz">
+    <input type="submit">
+</form>
+{% endblock %}

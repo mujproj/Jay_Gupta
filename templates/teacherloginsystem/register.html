@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block content %}
+<p>Hello this is registration page</p>
+<form action="{% url 'afterRegister' %}" method="POST">
+    {% csrf_token %}
+    {{rForm}}
+    <input type="submit" class="btn btn-success">
+    {{error}}
+</form>
+{% endblock %}
